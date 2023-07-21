@@ -1,10 +1,13 @@
 package repository;
 
+
+
+import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
+@Component
 public class ProductRepository {
     List<Product> productList = new ArrayList<>();
-
     public void addProduct (Product product) {
         productList.add(product);
     }

@@ -2,9 +2,9 @@ package repository;
 
 public class Product {
     long id;
-    public String name;
+    String name;
     double price;
-    public String description;
+    String description;
 
     public Product(long id, String name, double price, String description) {
         this.id = id;
