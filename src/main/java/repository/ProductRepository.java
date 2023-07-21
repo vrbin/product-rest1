@@ -18,4 +18,26 @@ public class ProductRepository {
         return null;
     }
 
+    public void deleteProductById(long id) {
+        for (int i=0; i < productList.size(); i++) {
+            if (productList.get(i).id == id) {
+                productList.remove(i);
+                return;
+            }
+        }
+    }
+
+    public void updateProduct(Product product) {
+        for (int i=0; i < productList.size(); i++) {
+            if (productList.get(i).id == product.id) {
+                productList.set(i, product);
+                return;
+            }
+        }
+    }
+
+    public List<Product> getProducts () {
+        return productList;
+    }
+
 }
